@@ -93,5 +93,5 @@ with open('currencies.txt') as f:
     flights = []
     for line in f:
         flight = (line.strip()).split(' ')
-    flights.append(int(float(currencies(flight[1], flight[2], cur_to))))
+        flights.append(int(float(currencies(flight[1], flight[2], cur_to))))
     print(f'Общая стоиомсть перелетов: {sum(flights)} рбулей')
